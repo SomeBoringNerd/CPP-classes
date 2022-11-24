@@ -1,0 +1,25 @@
+@startuml Diagrame
+
+class Duelist
+{
+    - string name;
+
+    + Duelist(string name);
+    + string getName();
+    + void itsTime();
+    + Weapon weapon;
+}
+
+Duelist::weapon <|--- Weapon
+
+class Weapon
+{
+    - int ammo;
+
+    + Weapon();
+    + int GetAmmo();
+    + void Fire(string shooter);
+    + void Reload();
+}
+
+@enduml

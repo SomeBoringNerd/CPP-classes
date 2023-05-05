@@ -1,0 +1,17 @@
+@startuml banque
+
+class Banque
+{
+    + int main();
+    - void loop();
+    - void UpdateLogged();
+    - int callback(void *data, int argc, char ****argv, char ****azColName);
+    - void print(string texte);
+    - void printNoFancy(string texte);
+
+    - string nom;
+    - string password;
+    - int balance;
+}
+
+@enduml

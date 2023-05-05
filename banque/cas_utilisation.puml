@@ -1,0 +1,26 @@
+@startuml banque
+
+left to right direction
+
+"Utilisateur" as User
+
+"Banque" as Bank
+
+rectangle Banque{
+    usecase "Créer un compte" as U1
+    usecase "Connecter a un compte" as U2
+    usecase "Retirer de l'argent" as U3
+    usecase "Gérer le compte" as U4
+    usecase "Gérer la base de donnée" as U5
+    usecase "Maintenir le programme" as U6
+}
+
+User --> U1
+User --> U2
+User --> U3
+User --> U4
+
+Bank --> U5
+Bank --> U6
+
+@enduml
